@@ -1,5 +1,7 @@
 package task13;
 
+import java.util.Objects;
+
 public class Circle extends Shape {
     private int x, y, radius;
 
@@ -38,5 +40,28 @@ public class Circle extends Shape {
     public void draw() {
         System.out.println("Drawing circle with "
                 + getColor() + getX() + getY());
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "x=" + x +
+                ", y=" + y +
+                ", radius=" + radius +
+                '}' + super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Circle circle = (Circle) o;
+        return x == circle.x && y == circle.y && radius == circle.radius;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), x, y, radius);
     }
 }

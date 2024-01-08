@@ -8,8 +8,13 @@ public class ShapeDemo {
         shapes[2] = new Rectangle("blue", 5, 7,67,68);
         shapes[3] = new Rectangle("brown", 8, 9,40,6);
 
+
+
         for (Shape shape : shapes) {
             shape.draw();
+            System.out.println(shape);
         }
+
+
     }
 }

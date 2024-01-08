@@ -13,7 +13,9 @@ public class StaticBlock {
     }
 
     public static void main(String[] args) {
-        System.out.println("a = " + a);
+        StaticBlock staticBlock1 = new StaticBlock();
+        StaticBlock staticBlock2 = new StaticBlock();
+//        System.out.println("a = " + a);
     }
 
 }
