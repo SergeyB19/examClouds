@@ -19,7 +19,15 @@ public class Magazine implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Printing magazine: "  + getName());
+        System.out.println("Printing magazine: " + getName());
+    }
+
+    public static void printMagazines(Printable[] printables) {
+        System.out.println("Printing magazines: ");
+        for (Printable printable : printables) {
+            if (printable instanceof Magazine)
+            System.out.println(((Magazine) printable).getName());
+        }
     }
 
     @Override

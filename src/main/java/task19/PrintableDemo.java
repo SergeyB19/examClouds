@@ -12,5 +12,7 @@ public class PrintableDemo {
         for (Printable printable : printables) {
             printable.print();
         }
+
+        Magazine.printMagazines(printables);
     }
 }
