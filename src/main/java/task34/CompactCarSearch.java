@@ -1,3 +1,4 @@
+/*
 package task34;
 
 import task15.vehicles.Car;
@@ -8,4 +9,4 @@ public class CompactCarSearch implements Searchable {
         return car.getType().equals(CarTypes.COMPACT);
     }
 
-}
+}*/

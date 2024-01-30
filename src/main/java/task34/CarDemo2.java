@@ -1,3 +1,4 @@
+/*
 package task34;
 
 import task15.vehicles.Car;
@@ -33,5 +34,8 @@ public class CarDemo2 {
         }
         return result;
     }
-     /*carDemo.getCarsNumber(cars,(Car car) -> car.getType().equals(CarTypes.COMPACT));*/
+     */
+/*carDemo.getCarsNumber(cars,(Car car) -> car.getType().equals(CarTypes.COMPACT));*//*
+
 }
+*/

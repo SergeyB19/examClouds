@@ -1,3 +1,4 @@
+/*
 package task34;
 
 import task15.vehicles.Car;
@@ -9,3 +10,4 @@ public class ExpensiveCarSearch implements Searchable {
     }
 
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package task34;
 
 import task15.vehicles.Car;
@@ -23,3 +24,4 @@ public class LyambdaDemo {
         return result;
     }
 }
+*/
