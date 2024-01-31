@@ -9,6 +9,5 @@ public class PredicateDemo2 {
         Predicate<String> containsB = t -> t.contains("B");
         System.out.println(containsA.and(containsB).test("ABCD"));
 
-        System.out.println(LocalTime.of(0, 0, 2).plusSeconds(6078).getSecond());
     }
 }
