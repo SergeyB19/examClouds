@@ -1,8 +1,11 @@
 package task14;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 
-public class Phone {
+public class Phone implements Comparable<Phone>{
+    private int id;
     private String number;
     private String model;
     private double weight;
@@ -35,8 +38,21 @@ public class Phone {
         this.model = model;
         this.weight = weight;
         count++;
+    }
 
+    public Phone(int id, String number, String model, double weight) {
+        this.id = id;
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNumber() {
@@ -66,7 +82,8 @@ public class Phone {
     @Override
     public String toString() {
         return "Phone{" +
-                "number=" + number +
+                "id=" + id +
+                ", number='" + number + '\'' +
                 ", model='" + model + '\'' +
                 ", weight=" + weight +
                 '}';
@@ -74,6 +91,13 @@ public class Phone {
 
     static int getCount() {
         return count;
+    }
+
+    @Override
+    public int compareTo(@NotNull Phone o) {
+//        return this.id-o.id;
+//        return Double.compare(this.getWeight(), o.getWeight());/*по возрастанию*/
+        return Double.compare(o.getWeight(), this.getWeight());/*по убыванию*/
     }
 }
 
