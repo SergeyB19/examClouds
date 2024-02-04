@@ -4,6 +4,7 @@ package task41;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Random;
 
 public class ListIteratorDemo {
     public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class ListIteratorDemo {
         while (listIterator.hasPrevious()) {
             String element = listIterator.previous();
             System.out.print(element + " ");
+
         }
     }
 }
